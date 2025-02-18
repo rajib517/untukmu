@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanya Untukmu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mau jadi pacar gw ga? ❤️</h1>
+      <div class="buttons">
+        <button class="yes" onclick="sayYes()">Mau</button>
+        <button class="no" onmouseover="moveNo(this)">Gk</button>
+      </div>
+      <h2 class="hidden" id="response">I love you! 💖</h2>
+    </div>
+
+    <script>
+      function sayYes() {
+        document.getElementById("response").classList.remove("hidden");
+      }
+
+      function moveNo(button) {
+        let x = Math.random() * (window.innerWidth - 100);
+        let y = Math.random() * (window.innerHeight - 50);
+        button.style.left = `${x}px`;
+        button.style.top = `${y}px`;
+      }
+    </script>
+  </body>
+</html>

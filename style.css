@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffebee;
+}
+.container {
+    margin-top: 100px;
+}
+h1 {
+    color: #d32f2f;
+}
+.buttons {
+    margin-top: 20px;
+}
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.yes {
+    background-color: #4caf50;
+    color: white;
+}
+.no {
+    background-color: #d32f2f;
+    color: white;
+    position: absolute;
+}
+.hidden {
+    display: none;
+}
